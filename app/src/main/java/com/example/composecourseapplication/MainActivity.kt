@@ -47,23 +47,6 @@ fun GreetingList(name: String, textFieldUpdate: (newName: String) -> Unit){
     }
 }
 
-@Composable
-fun Greeting(name: String){
-    Text(text = "Hello $name!", style = MaterialTheme.typography.h5)
-}
-
-@Composable
-fun HorizontalBar(color: Color){
-    Surface(
-        color = color,
-        modifier = Modifier
-            .height(70.dp)
-            .fillMaxSize()
-    ) {
-        Text(text = "Wrapped Content", modifier = Modifier.wrapContentSize(), style = MaterialTheme.typography.h3)
-    }
-}
-
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreviewMainActivity(){
